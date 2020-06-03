@@ -1,0 +1,276 @@
+html{
+    scroll-behavior: smooth;
+
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+body{
+    width: 100vw;
+    height: 200vh;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+header{
+     background-image: linear-gradient(to bottom, rgba(93, 93, 93, 0.123),rgba(90, 90, 90, 0.048)),
+    url(https://eskipaper.com/images/wallpaper-canada-8.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    height: 40%;
+    width:100%;
+    text-align: center;
+    color: rgb(251, 251, 251);
+    font-style: italic;
+}
+
+
+header img{
+    position: relative;
+    height: 60%;
+    border-radius: 50%;
+    margin-top: 8%;
+
+}
+
+header h1{
+    font-style: italic;
+    color: white;
+    font-size: 28px;
+    line-height: 0px;
+    font-weight: 300;
+}
+
+header span{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+
+nav{
+    width: 50%;
+    position: fixed;
+    text-align: center;
+    margin-left: 26%;
+    z-index: 1;
+    background-color: #303030ad;
+    border-radius: 45px;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+nav ul li a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+#home{
+    font-size: 40px;
+}
+
+nav a:hover{
+     top: -5px;
+}
+
+
+section{
+    margin-top: 30px;
+    height: 23%;
+    background-color: #ffffff;
+    padding:80px 40px;
+}
+
+/* //////////// About me section //////////// */
+
+#aboutme img{
+    position: relative;
+    top: 40px;
+    width: 40%;
+    border-radius: 10%;
+}
+
+#aboutme h3{
+    position: absolute;
+    font-size: 42px;
+    font-style: italic;
+    line-height: 0px;
+    margin-left: 58%;
+    margin-top: 80px;
+}
+
+#aboutme p{
+    float: right;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 40%;
+    height: 40%;
+    padding: 30px;
+    margin: 160px 200px 0px 50px;
+    font-size: 25px;
+    line-height: 30px;
+
+}
+
+/* ///////// Skills Section ///////// */
+
+#skills{
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    font-size: 50px;
+    margin: auto auto;
+    font-style: italic;
+    background-color: #f1f5f6;
+}
+
+#skills i{
+    font-size: 120px;
+    padding:30px;
+}
+
+.fa-html5{
+    color: rgb(195, 62, 62);
+}
+
+.fa-css3-alt{
+    color: rgb(29, 109, 200);
+}
+
+.fa-js{
+    color: rgb(236, 236, 3);
+}
+
+.fa-node{
+    color: #303030;
+}
+
+.fa-react{
+    color: rgb(37, 206, 228);
+}
+
+/* //////  Experience Section ////// */
+#experience{
+    background-color: #fff;
+}
+
+#experience #box{
+    height: 90%;
+    width: 40%;
+    text-align: center;
+    padding-top: 2%;
+    
+}
+#experience img{
+    width: 750px;
+    float: right;
+    position: relative;
+    right: 100px;
+    border-radius: 35px;
+}
+
+#experience h3{
+    font-size: 52px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
+
+#experience h4{
+    position: relative;
+    left: -20px;
+    font-size: 25px;
+}
+
+#experience a{
+    position: relative;
+    left: 130px;
+    top: -80px;
+    font-size: 60px;
+}
+
+#experience ul{
+    font-size: 25px;
+    line-height: 55px;
+    list-style-type: none;
+}
+
+#experience i{
+    color: #303030;
+}
+
+/* //////// Hobbies section ////////// */
+
+#hobbies{
+    padding: 80px 0px;
+    width: 100%;
+    background-color: #f1f5f6;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#hobbies h3{
+    position: absolute;
+    left: 46%;
+    top: 273%;
+    font-size: 38px;
+}
+
+#hobbies figure img{
+    height: 490px;
+    border-radius: 15px;
+    transition:all 0.5s ease-in-out;
+}
+
+#hobbies figure img:hover{
+     transform: scale(1.1);
+}
+
+
+#hobbies figcaption{
+    position: relative;
+    top: -60px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#hobbies #ski{
+    color: black;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #303030;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 160px;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+footer i{
+    font-size: 35px;
+    margin-left: 20px;
+    color: white;
+}
+
