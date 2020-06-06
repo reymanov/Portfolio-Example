@@ -1,15 +1,11 @@
 html{
     scroll-behavior: smooth;
 
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
 }
 
+
 body{
-    width: 100vw;
+    width: 100%;
     height: 200vh;
     margin: 0;
     padding: 0;
@@ -24,7 +20,6 @@ header{
     background-size: cover;
 
     height: 40%;
-    width:100%;
     text-align: center;
     color: rgb(251, 251, 251);
     font-style: italic;
@@ -33,96 +28,106 @@ header{
 
 header img{
     position: relative;
-    height: 60%;
+    height: 50%; 
+    margin-top: 10%;
     border-radius: 50%;
-    margin-top: 8%;
+   
 
 }
 
 header h1{
-    font-style: italic;
-    color: white;
-    font-size: 28px;
-    line-height: 0px;
-    font-weight: 300;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 10px;
+    
 }
 
-header span{
+header span, h2{
     color: rgb(255, 255, 255);
-    font-size: 35px;
+    font-size: 28px;
+    font-weight: 500;
 }
 
 
-nav{
-    width: 50%;
-    position: fixed;
+nav{ 
+    position: fixed; 
+    margin:0 20%;
+    width: 60%;
     text-align: center;
-    margin-left: 26%;
     z-index: 1;
+
+}
+
+.navigation{
+    display:inline-flex;
+    width:100%;
+    justify-content: center;
     background-color: #303030ad;
     border-radius: 45px;
-
+    
 }
 
-nav ul{
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-nav ul li a{
-    position: relative;
+.navigation a{
     display: block;
-    text-decoration: none;
+    width: 10%;
+    padding: 10px 0;
+    margin: 0 20px;
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 500;
-    padding: 10px 20px;
+    text-decoration: none;
 }
 
-#home{
+.navigation #home{
     font-size: 30px;
 }
 
-nav a:hover{
+.navigation a:hover{
+    position: relative;
      top: -5px;
 }
 
 
 section{
-    margin-top: 30px;
-    height: 23%;
+    height: 30%;
+    width: 100%;
     background-color: #ffffff;
-    padding:80px 40px;
+    padding:40px 40px;
+    box-sizing: border-box;
 }
 
 /* //////////// About me section //////////// */
 
+#aboutme{
+    display:flex;
+    padding-top: 80px;
+}
+
+#aboutme .box{
+    width:50% ;
+}
+
 #aboutme img{
-    position: relative;
-    top: 40px;
-    width: 40%;
+    width: 88%;
+    height: auto;
     border-radius: 10%;
 }
 
 #aboutme h3{
-    position: absolute;
-    font-size: 42px;
-    font-style: italic;
-    line-height: 0px;
-    margin-left: 58%;
-    margin-top: 80px;
+    display: block;
+   font-size: 42px;
+   width: 250px;
+   margin-left: 250px;
+   
 }
 
 #aboutme p{
-    float: right;
-    position: relative;
+    top: 120px;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
-    width: 40%;
-    height: 40%;
-    padding: 30px;
-    margin: 160px 200px 0px 50px;
+    width: 80%;
+    height: 60%;
+    padding: 25px;
     font-size: 25px;
     line-height: 30px;
 
@@ -131,13 +136,15 @@ section{
 /* ///////// Skills Section ///////// */
 
 #skills{
-    text-align: center;
     width: 100%;
-    justify-content: center;
-    font-size: 50px;
-    margin: auto auto;
-    font-style: italic;
     background-color: #f1f5f6;
+    text-align: center;
+    justify-content: center;
+}
+
+#skills h3{
+    font-size: 50px;
+    font-style: italic;
 }
 
 #skills i{
@@ -146,11 +153,11 @@ section{
 }
 
 .fa-html5{
-    color: rgb(195, 62, 62);
+    color: rgb(212, 45, 45);
 }
 
 .fa-css3-alt{
-    color: rgb(29, 109, 200);
+    color: rgb(41, 133, 238);
 }
 
 .fa-js{
@@ -158,7 +165,7 @@ section{
 }
 
 .fa-node{
-    color: #303030;
+    color: #353232;
 }
 
 .fa-react{
@@ -166,6 +173,7 @@ section{
 }
 
 /* //////  Experience Section ////// */
+
 #experience{
     background-color: #fff;
 }
@@ -175,6 +183,7 @@ section{
     width: 40%;
     text-align: center;
     padding-top: 2%;
+    
     
 }
 #experience img{
@@ -189,12 +198,21 @@ section{
     font-size: 52px;
     letter-spacing: 3px;
     word-spacing: 10px;
+
+}
+
+#experience ul{
+    font-size: 25px;
+    line-height: 55px;
+    list-style-type: none;
+
 }
 
 #experience h4{
     position: relative;
     left: -20px;
     font-size: 25px;
+
 }
 
 #experience a{
@@ -202,12 +220,7 @@ section{
     left: 130px;
     top: -80px;
     font-size: 60px;
-}
-
-#experience ul{
-    font-size: 25px;
-    line-height: 55px;
-    list-style-type: none;
+    
 }
 
 #experience i{
@@ -216,19 +229,19 @@ section{
 
 /* //////// Hobbies section ////////// */
 
-#hobbies{
-    padding: 80px 0px;
-    width: 100%;
-    background-color: #f1f5f6;
-    text-align: center;
+#hobbies{ 
     display: flex;
+    width: 100%;
+    padding: 80px 0px;
     justify-content: space-evenly;
+     text-align: center;
+    background-color: #f1f5f6;
 }
 
 #hobbies h3{
+    display: block;
     position: absolute;
-    left: 46%;
-    top: 273%;
+    top: 258%;
     font-size: 38px;
 }
 
@@ -248,11 +261,11 @@ section{
     top: -60px;
     font-size: 30px;
     font-weight: bold;
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 #hobbies #ski{
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 footer{
